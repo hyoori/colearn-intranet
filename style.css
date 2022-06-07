@@ -1,7 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass&family=Poppins:wght@700&display=swap");
 
 .feed-container {
   font-family: "Overpass", sans-serif !important;
+}
+.feed-container .title {
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+.feed-container .title a,
+.feed-container .title a:visited {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: bold;
+  color: #2760ed;
+}
+
+.feed-container .description {
+  padding-bottom: 16px;
+  border-bottom: 1px dotted #ccc;
+  margin-bottom: 16px;
 }
 .feed-clear {
   clear: both !important;
