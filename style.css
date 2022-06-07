@@ -1,91 +1,180 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #f1e9f3;
-  font-family: "Overpass";
-}
-img {
-  border: 0px;
-}
 .feed-container {
-  font-size: 14px;
-  border: 1px solid #ccc;
+  font-family: "Overpass", sans-serif !important;
 }
-.feed-container .header {
-  margin: 0px;
-  padding: 5px 5px 5px 5px;
-  color: #fff;
+.feed-clear {
+  clear: both !important;
+  display: block !important;
+  float: none !important;
+  font-size: 0;
+  height: 0;
 }
-.feed-container .footer {
-  margin: 0px;
-  padding: 5px 5px 5px 5px;
-  color: #fff;
+#feed-page {
+  margin: 0 auto;
+  background: #fff;
+  padding-bottom: 10px;
 }
-.feed-container .header .title {
+#feed-header {
+  margin-top: 10px;
+  padding: 10px;
+  border: #d7d7d7 1px solid;
+  background: #f2f2f2;
+}
+#feed-header h1 {
   margin: 0;
   padding: 0;
+  font-size: 19px;
+}
+#feed-header h1 a {
+  text-decoration: none;
+  color: #000;
+}
+#feed-content {
+  margin-top: 10px;
+}
+#feed-content h3 {
+  margin: 10px 0 3px 0;
+  font-size: 12px !important;
+  text-align: left !important;
+}
+#feed-content a {
+  color: #3366ff;
+}
+#feed-content a:hover {
+  text-decoration: none;
+}
+label {
   font-weight: bold;
 }
-.feed-container .header a:link {
+.feed-left-content {
+  min-height: 400px;
+  float: left;
+  border: #d7d7d7 1px solid;
+}
+.feed-right-content {
+  min-height: 300px;
+  float: right;
+  border: #d7d7d7 1px solid;
+  padding: 10px;
+}
+.feed-right-content .content iframe {
+  margin: 0 auto;
+}
+.feed-left-content .feed-form {
+  padding: 10px;
+}
+.form .item {
+  margin-left: 30px;
+  padding-bottom: 15px;
+}
+.separator {
+  height: 1px;
+  background: url("../images/border-bg.gif") repeat-x;
+}
+.feed-form .item .action {
+  margin-top: 5px;
+  text-align: right;
+  padding-right: 30px;
+}
+.feed-form .item .action a.slide {
+  float: right;
+  display: block;
+  padding-left: 15px;
+  background: url("../images/i-slide-link-open.gif") no-repeat scroll left 9px;
+}
+.feed-form .item .action .slide.open {
+  background: url("../images/i-slide-link.gif") no-repeat scroll left 9px;
+}
+.feed-form .item td {
+  padding: 5px 0;
+}
+.feed-form .item td span {
+}
+.feed-form .item ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.feed-form .item ul li {
+  margin: 5px 0;
+}
+.multi-input {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.multi-input li {
+  padding: 0;
+  margin: 5px 0 0 0;
+  display: block;
+  position: relative;
+}
+.multi-input li input {
+  width: 285px;
+}
+.multi-input li .b-close {
+  background: url("../images/i-close.png") no-repeat;
+  height: 12px;
+  width: 12px;
+  display: block;
   color: #fff;
-  text-decoration: none;
+  position: absolute;
+  top: 4px;
+  right: 8px;
 }
-.feed-container .header a:visited {
-  color: #fff;
-  text-decoration: none;
+.bar {
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin-top: 2px;
+  border: 1px solid;
+  border-color: #ccc;
 }
-.feed-container .header a:hover {
-  color: #fff;
-  text-decoration: underline;
+.slide-bar {
+  display: none;
 }
-.feed-container .header a:active {
-  color: #fff;
-  text-decoration: none;
+.feed-example {
+  padding: 20px;
+  margin-bottom: 15px;
 }
-.feed-container .content {
-  margin: 0px;
-  padding: 0 3px;
-  background-color: #f1e9f3;
+.code-field {
+  margin-top: 10px;
 }
-.feed-container .content .item {
-  margin: 0 0 7px 0;
-  padding: 0 0 7px 0;
-  border-bottom: 1px dashed #cccccc;
+.code-field textarea {
+  width: 97%;
+  height: 100px;
 }
-.feed-container .content .item .title {
-  margin: 1px 0 1px 3px;
-  padding: 1px 2px 1px 3px;
-  color: #5a4860;
-  font-weight: bold;
+.questionMark {
+  position: relative;
+  top: -20px;
+  left: 315px;
+  height: 16px;
+  width: 16px;
+  background: url(/images/questionMark.png) top left no-repeat;
 }
-.feed-container .content .item .title a:link {
-  color: #5a4860;
-  text-decoration: none;
+.toolTip {
+  position: absolute;
+  left: 26px;
+  top: 0;
+  display: none;
+  width: 250px;
+  padding: 5px;
+  border: 1px solid #999;
+  background-color: #fff;
+  font: 10;
 }
-.feed-container .content .item .title a:visited {
-  color: #5a4860;
-  text-decoration: none;
+.toolTipL {
+  position: absolute;
+  left: -276px;
+  top: 0;
+  display: none;
+  width: 250px;
+  padding: 5px;
+  border: 1px solid #999;
+  background-color: #fff;
+  font: 10;
 }
-.feed-container .content .item .title a:hover {
-  color: #5a4860;
-  text-decoration: underline;
-}
-.feed-container .content .item .title a:active {
-  color: #5a4860;
-  text-decoration: none;
-}
-.feed-container .content .item .description {
-  margin: 0 0 0 3px;
-  padding: 0 2px 0 3px;
-  color: #666;
-}
-.feed-container .content .item .description a {
-  text-decoration: none;
-  color: #9257a6;
-}
-.feed-container .content .item .description a:hover {
-  text-decoration: underline;
-  color: #cc99cc;
+.feed-form .item input.smallin {
+  width: 35px;
 }
