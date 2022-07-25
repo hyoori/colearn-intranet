@@ -13,11 +13,20 @@
   font-weight: bold;
   color: #2760ed;
 }
-
+.feed-container .content .item .description {
+  font-family: Overpass, sans-serif;
+}
+.feed-container .content .item .title a:link {
+  font-family: Overpass, sans-serif;
+}
 .feed-container .description {
   padding-bottom: 16px;
   border-bottom: 1px dotted #ccc;
   margin-bottom: 16px;
+}
+.feed-container .content {
+  background-color: #f2f7ff !important;
+  overflow-y: hidden !important;
 }
 .feed-clear {
   clear: both !important;
