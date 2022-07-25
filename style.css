@@ -26,7 +26,6 @@
 }
 .feed-container .content {
   background-color: #f2f7ff !important;
-  overflow-y: hidden !important;
 }
 .feed-clear {
   clear: both !important;
