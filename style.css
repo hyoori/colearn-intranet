@@ -5,13 +5,16 @@
 }
 .feed-container .title {
   font-weight: bold;
-  padding-bottom: 8px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  border-bottom: 1px solid #e8e8e8;
 }
 .feed-container .title a,
 .feed-container .title a:visited {
   font-family: "Poppins", sans-serif !important;
   font-weight: bold;
   color: #2760ed;
+  font-size: 14px;
 }
 .feed-container .content .item .description {
   font-family: Overpass, sans-serif;

@@ -50,6 +50,12 @@
   type="text/javascript"
   src="//feed.surfing-waves.com/js/rss-feed.js"
 ></script>
+<script type="text/javascript">
+  var regExString = /(<([^>]+)>)/gi; //create reg ex and let it loop (g)
+  contentString = rssfeed_item_description.textContent; // get text from node (no longer an object but string.
+
+  contentString = contentString.replace(regExString, ""); //find all tags and delete them.
+</script>
 <!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. -->
 <div style="color: #ccc; font-size: 10px; text-align: right; width: 460px">
   powered by
